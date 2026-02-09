@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff4d6d, #c9184a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .card {
+    background: #fff6f0;
+    width: 330px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    z-index: 2;
+  }
+  
+  h1 {
+    color: #c9184a;
+  }
+  
+  p {
+    color: #6a040f;
+    font-size: 15px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .yes {
+    background: #ff4d6d;
+    color: white;
+  }
+  
+  .no {
+    background: #adb5bd;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Corazones flotando */
+  .background .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    transform: rotate(45deg);
+    animation: float 8s infinite ease-in-out;
+    opacity: 0.6;
+  }
+  
+  .background .heart::before,
+  .background .heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+  }
+  
+  .background .heart::before {
+    top: -10px;
+    left: 0;
+  }
+  
+  .background .heart::after {
+    left: -10px;
+    top: 0;
+  }
+  
+  .background .heart:nth-child(1) { left: 25%; animation-delay: 0s; }
+  .background .heart:nth-child(2) { left: 55%; animation-delay: 2s; }
+  .background .heart:nth-child(3) { left: 80%; animation-delay: 4s; }
+  
+  @keyframes float {
+    0% { bottom: -10%; }
+    100% { bottom: 110%; }
+  }

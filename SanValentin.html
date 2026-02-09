@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Quieres ser mi Valentín? ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="background">
+  <span class="heart"></span>
+  <span class="heart"></span>
+  <span class="heart"></span>
+</div>
+
+<div class="card">
+  <div id="step1">
+    <h1>¿Quieres ser mi Valentín? ❤️</h1>
+    <div class="buttons">
+      <button class="yes" onclick="accept()">Sí 💖</button>
+      <button class="no" onmouseover="moveButton(this)">No 🙈</button>
+    </div>
+  </div>
+
+  <div id="step2" class="hidden">
+    <h1>💘 ¡Sabía que dirías que sí! 💘</h1>
+    <p>
+      Gracias por ser una persona tan especial.  
+      Cada momento contigo hace que todo valga la pena 💕  
+      Este San Valentín es solo el comienzo de muchos más.
+    </p>
+
+    <canvas id="heartCanvas" width="260" height="240"></canvas>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
